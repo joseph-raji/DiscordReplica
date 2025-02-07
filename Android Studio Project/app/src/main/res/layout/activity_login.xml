@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/bg" />
+
+    <EditText
+        android:id="@+id/identityInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="6dp"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_background"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:hint="Username or Email"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:paddingLeft="15dp"
+        android:textIsSelectable="true" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:drawablePadding="6dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/identityInput"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:textColorHint="@color/white"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_background"
+        android:drawableLeft="@drawable/baseline_security_24"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:paddingLeft="15dp"
+        android:textIsSelectable="true" />
+
+    <ImageView
+        android:id="@+id/imgShowHidePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/passwordInput"
+        android:layout_alignBottom="@+id/passwordInput"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_visibility_24"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordInput"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/normal_btn_bg"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="52dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@color/white" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordInput"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="268dp"
+        android:buttonTint="@color/white"
+        android:text="Remember Me"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

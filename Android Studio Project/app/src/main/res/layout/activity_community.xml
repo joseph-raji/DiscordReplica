@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple"
+    tools:context=".Community">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="357dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="56dp"
+        android:text="Loading..."
+        android:fontFamily="@font/montserratblack"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainText2"
+        android:layout_width="392dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/getstartedbg"
+        android:gravity="center"
+        android:text="Available Rooms"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="308dp"
+        android:layout_height="40dp"
+        android:text="Loading..."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+    <Button
+        android:id="@+id/openRoomButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/grey_btn_bg"
+        android:enabled="false"
+        android:text="Open New Room"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/grey_btn_bg"
+        android:enabled="false"
+        android:text="Refresh"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="395dp"
+        android:layout_height="357dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/message_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainText2">
+
+        <LinearLayout
+            android:id="@+id/roomsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noroom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="100dp"
+                android:paddingTop="150dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
